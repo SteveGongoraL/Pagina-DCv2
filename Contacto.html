@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Dc Comics Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pagina con el fin de presentar información sobre la editorial de comics Dc">
+        <meta name="autor" content="Steve Brayton Góngora Luévano">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="header" id="navegador">
+            <nav class="menu">
+                <a class="logo" href="index.html">Dc Explore the Multiverse <img src="Recursos/DC_Comics_logo.png" alt="Logo Dc Comics" width="35" height="35"></a>
+                <ul class="menu-items">
+                    <li><a href="Comics.html">Comics</a></li>
+                    <li><a href="Television.html">DCTV</a></li>
+                    <li><a href="Cine.html">DCEU</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <button class="switch" id="switch">
+                        <span>&#127763;</span>
+                    </button>
+                </ul>
+            </nav>
+        </header>
+        <main class="Mcontactos">
+            <h1 id="titulo">Dc Comics Contacto</h1>
+            <figure><img class="centrado" src="Recursos/Telefono.gif" alt="Imagen alusiva a la serie de Batman 1966"><figcaption>Telefono serie Batman de 1966 <span>&#9743;</span></figcaption></figure>
+            <article>
+                <hr>
+                <h2 class="subtitulo">¡<b class="saludo"></b> VIAJERO MANTENTE AL TANTO DE LAS ÚLTIMAS NOTICIAS DE DC!</h2>
+                <p>Recibe información sobre Vértigo. Revista MAD. Desde héroes icónicos hasta sofisticadas historias gráficas, hasta dosis regulares de diversión tonta.</p>
+                <p>Entérate de todo lo que está sucediendo en DC Entertainment publicaciones, animación, televisión, películas, mercancía y más y obtén grandes ofertas en suscripciones, libros, cómics digitales y equipo oficial de DC Entertainment.</p>
+                <hr>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend class="subtitulo">SÓLO NECESITAMOS UN POCO DE INFORMACIÓN PARA EMPEZAR...</legend>
+                        <div>
+                            <label for="Nombre">Nombre </label>
+                            <input type="text" name="Nombre" id="Nombre">
+                        </div>
+                        <div>
+                            <label for="Apellido">Apellido </label>
+                            <input type="text" name="Apellido" id="Apellido">
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha Nacimiento </label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <div>
+                            <label for="email">Dirección de correo electronico </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="tel">Telefono de contacto </label>
+                            <input type="tel" name="telefono" id="tel">
+                        </div>
+                        <div>
+                            <label for="categoria">Seleccione a que categoria desea suscribirse </label>
+                            <select name="categoria" id="categoria" multiple>
+                                <option value="1">Comics</option>
+                                <option value="2">Cine</option>
+                                <option value="3">Television</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="condicion">Desea recibir infromacion mediante mensajes de texto </label>
+                            <input type="checkbox" name="condicion" id="condicion">
+                        </div>
+                        <div>
+                            <input type="button" value="Enviar">
+                            <input type="reset" value="Restablecer">
+                        </div>
+                        <hr>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer class="footer">
+            <address>
+                <p><br><span>&#169;</span> <small> Warner Media, LLC.</small><br> Dirección Ofinas: 30 Hudson Yards, NY 10001, Estados Unidos</p>
+            </address>
+            <div id="ir-arriba"><a href="#navegador">Back to top</a></div>
+        </footer>
+        <script src="Javascript/apps.js"></script>
+    </body>
+</html>

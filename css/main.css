@@ -1,0 +1,445 @@
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+body{
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+    background: linear-gradient(to right, #2a0845, #6441A5);
+    transition: .3s ease all;
+    margin: 0;
+}
+body.dark{
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+
+
+/* Formatos */
+html{
+    scroll-behavior: smooth;
+}
+mark{
+    background-color: #ee82ee;
+}
+a, a:visited{
+    color:#007bff;
+    text-decoration: none;
+}
+a:hover{
+    color: whitesmoke;
+    transition: all 0.4s linear;
+}
+.centrado{
+    display:block;margin:auto;
+}
+#titulo{
+    font-size: 50px;
+    text-align: center;
+    font-family:Century;
+}
+#titulo-aside{
+    text-align: center;
+    font-size: 20px;
+    font-family:Comic Sans MS;
+}
+.subtitulo{
+    text-align: center;
+    font-size: 25px;
+    font-family:Comic Sans MS;
+}
+.subtitulo2{
+    font-style: italic;
+    font-size: 30px;
+    font-family:Comic Sans MS;
+    color: #007bff;
+    text-shadow: 0 0 5px #000000;
+}
+#numero-columnas{
+    column-count: 3;
+}
+#numero-columnas2{
+    column-count: 2;
+    text-align: left;
+}
+#selectorDia{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+#tituloPrincipal{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Montserrat Alternates',sans-serif;
+}
+
+
+/* Nav */
+/* Menu Principal */
+.container{
+    width: 90%;
+    margin: auto;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Montserrat Alternates',sans-serif;
+}
+.header{
+    background: #413C69;
+    width: 100%;
+    /* position: fixed;
+    left: 0;
+    top: 0;
+    right: 0; */
+}
+body.dark .header{
+    background: #333;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 70px;
+}
+.logo{
+    font-size: 27px;
+}
+.container .btn-menu{
+    float: left;
+    line-height: 70px;
+}
+.btn-menu label{
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Menu Lateral */
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    font-family: 'Montserrat Alternates',sans-serif;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0; left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #413C69;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+body.dark .cont-menu{
+    background: #1c1c1c;
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    padding: 20px;
+    border-left: 2px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 2px solid #c7c7c7;
+    background: #beaee22a;
+}
+body.dark .cont-menu nav a:hover{
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+/* Main*/
+.formato{
+    width: 50%;
+    margin-left: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+#imagenprincipal{
+    width: 100%;
+    height: auto;
+    /* padding-top: 3.5rem; */
+    box-shadow: 0 0 10px #000000;
+}
+figure{
+    margin: 0;
+}
+.formato-imagenes{
+    width: 70%;
+    height: auto;
+}
+.imagenes{
+    width: 20%;
+    height: auto;
+}
+.formato video{
+    width: 70%;
+    height: auto;
+}
+.formato iframe{
+    width: 60%;
+}
+
+
+
+
+
+/* Main para Contacto */
+.Mcontactos{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+.Mcontactos img{
+    width: 40%;
+    height: auto;
+}
+.Mcontactos video{
+    width: 70%;
+    height: auto;
+}
+.Mcontactos iframe{
+    width: 60%;
+}
+
+
+/* Aside */
+.aside{
+    width: 30%;
+    margin-right: 10%;
+    padding: 4px;
+    box-sizing: border-box;
+    float: left;
+    color: #ffffff;
+    border: 3px dotted whitesmoke;
+    border-radius: 80px 20px;
+    background-color: rgba(51, 51, 51, 0.527);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* position: sticky;
+    top: 5px; */
+}
+.aside ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    clear: both;
+    color: #ffffff;
+    background: #413C69;
+}
+body.dark .footer{
+    background: #333;
+}
+.footer-left{
+    width: 49%;
+    height: 100px;
+    display:inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.footer-left2{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+    border-left: solid 1px #ffffff;
+}
+
+
+
+/* Tabla */
+.tabla{
+    text-align: center;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border:1px solid#000;
+    background-color: #f5f5f5;
+    color: #000000;
+    padding: 5px;
+}
+th{
+    border:1px solid#000;
+    background-color: #686868;
+    padding: 5px;
+}
+td:hover{
+    background:#1a1919;
+    color: #ffffff;
+}
+th:hover{
+    background: #1a1919;
+}
+
+
+
+/* Colores television */
+#arrow{
+    background-color: #008000;
+}
+#flash{
+    background-color:#b32727;
+}
+#supergirl{
+    background-color: #040485;
+}
+#legends{
+    background-color: #f5f5f5;
+    color: #000000;
+}
+.blackl{
+    background-color: #d4d434;
+}
+.batwoman{
+    background-color: #7d2121;
+}
+#superman{
+    background-color:#005780;
+}
+
+
+
+/* botton switch */
+.switch{
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
+.switch.active{
+    background: orange;
+    color: #000;
+}
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+/* .switch:hover{
+    background: whitesmoke;
+    transition: all 0.4s linear;
+}
+.switch span:hover{
+    color: black;
+} */
+
+
+
+
+
+/* Formato Portada */
+.contenedor-principal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.contenedor-principal .card{
+    width: 29%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: #3c5186ce;
+}
+body.dark .contenedor-principal .card{
+    background: #444444;
+}
+body.dark .contenedor-principal .card a{
+    color: #222831;
+}
+body.dark .contenedor-principal .card a:hover{
+    color: #310B0B;
+}
+body.dark .contenedor-principal .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(168, 167, 167, 0.13);
+}
+.contenedor-principal .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+.contenedor-principal .card img{
+    width: 100%;
+    height: 220px;
+}
+
+@media only screen and (max-width: 912px){
+    .contenedor-principal .card{
+        width: 60%;
+    }
+}

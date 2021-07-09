@@ -1,0 +1,62 @@
+<h2 class="subtitulo">AUTORES MÁS RELEVANTES</h2>
+    <ul id="numero-columnas">
+        <li>Jim Lee</li>
+        <li>Frank Miller</li>
+        <li>Alex Ross</li>
+        <li>Alan Moore</li>
+        <li>Marv Wolfman</li>
+        <li>Geoff Johns</li>
+        <li>Robert Kanigher</li>
+        <li>Steve Ditko</li>
+        <li>Roy Thomas</li>
+        <li>Paul Levitz</li>
+        <li>Dan Jurgens</li>
+        <li>Jerry Siegel</li>
+        <li>Joe Shuster</li>
+        <li>Julius Schwartz</li>
+        <li>Carmine Infantino</li>
+    </ul>
+
+
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #333;
+        box-shadow: 0 0 10px #000000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .logo{
+        color: #007bff;
+        font-size: 30px;
+        padding: 0 40px;
+    }
+    .menu-items{
+        display: flex;
+        list-style: none;
+        margin-right: 30px;
+    }
+    .menu-items li{
+        border-radius: 3px;
+        margin: 0, 5px;
+    }
+    .menu-items li a{
+        padding: 7px 13px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+    @media only screen and (max-width: 695px){
+        .menu-items{
+            flex-direction: column;
+        }
+        figure{
+            padding-top: 7rem;
+        }
+    }
